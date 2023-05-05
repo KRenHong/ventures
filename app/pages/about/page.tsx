@@ -1,3 +1,11 @@
+import Navbar from './components/nav';
+
+
 export default function Page() {
-  return <h1>Test</h1>;
+  return (
+  <>
+    <Navbar/>
+    <h1>Test</h1>;
+    </>
+  )
 }
