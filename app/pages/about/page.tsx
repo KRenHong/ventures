@@ -1,10 +1,10 @@
-import Navbar from './components/nav';
+// import Navbar from './components/nav';
 
 
 export default function Page() {
   return (
   <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <h1>Test</h1>;
     </>
   )

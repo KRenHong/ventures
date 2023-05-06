@@ -1,8 +1,12 @@
 'use client'
-import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
+import Link from 'next/link';
+import { Switch, Spacer, useTheme  } from "@nextui-org/react";
+import { useTheme as useNextTheme } from 'next-themes'
 // import {MoonIcon, SunIcon} from "@heroicons/react/solid";
 
-// const Navbar = () => {
+const Navbar = () => {
+  const { setTheme } = useNextTheme();
+    const { isDark, type } = useTheme();
     // const { resolvedTheme, setTheme } = useTheme();
     
   // const { systemTheme, theme, setTheme } = useTheme();
@@ -23,6 +27,7 @@ import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
+
                 <Link href="/" passHref>
                   <h1 className="text-white">Home</h1>
                 </Link>
@@ -31,7 +36,12 @@ import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
                   <h1 className='text-white'>Pitch-Deck Consolidator</h1>
                 </Link>
 
-                <Switch checked={false} />
+                <Link href="/pages/dashboard">
+                  <h1 className='text-white'>Dashboard</h1>
+                </Link>
+
+                <Switch checked={isDark}
+                onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')} />
 
                 {/* <button
                   onClick={() => theme == "dark"? setTheme('light'): setTheme("dark") }
