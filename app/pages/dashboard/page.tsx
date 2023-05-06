@@ -6,7 +6,6 @@ import { Card, Switch, Row, Container, Spacer, Grid, Text, Link } from "@nextui-
 // import Command from "@/app/components/command"
 import React from 'react'
 import { Command } from 'cmdk'
-import {  Calculator,  Calendar,  CreditCard,  Settings,  Smile,  User, } from "lucide-react"
 
 
 export default function Page() {
