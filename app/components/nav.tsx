@@ -14,59 +14,28 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gray-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <img
-                className="h-8 w-8"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
-              />
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-
-                <Link href="/" passHref>
-                  <h1 className="text-white">Home</h1>
-                </Link>
-
-                <Link href="/pages/dashboard">
-                  <h1 className='text-white'>Dashboard</h1>
-                </Link>
-
-                <Link href="/pages/predict">
-                  <h1 className='text-white'>Predict</h1>
-                </Link>
-
-                <Link href="/pages/pitch">
-                  <h1 className='text-white'>Pitch-Deck</h1>
-                </Link>
-
-                {/* <Switch checked={isDark}
-                onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')} /> */}
-
-                {/* <button
-                  onClick={() => theme == "dark"? setTheme('light'): setTheme("dark") }
-                  className='bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg absolute bottom-32'>
-                  Toggle Mode
-                </button> */}
-                
-                {/* <button
-                  aria-label="Toggle Dark Mode"
-                  type="button"
-                  className="m-3"
-                  onClick={() =>
-                    setTheme(resolvedTheme === "dark" ? "light" : "dark")
-                  }
-                ></button> */}
-              </div>
-            </div>
-          </div>
-        </div>
+    
+<nav className="bg-gray-950 border-gray-200 dark:bg-gray-900">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div className="flex items-center">
+        <img src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">BREAK</span>
+    </div>
+    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+    <div className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-950 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <Link href="/" passHref>
+        <h1 className="text-white">Home</h1>
+      </Link>
+      <Link href="/">
+        <h1 className='text-white'>Pitch-Deck Consolidator</h1>
+      </Link>
+      <Link href="/pages/dashboard">
+        <h1 className='text-white'>Dashboard</h1>
+      </Link>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
   );
 };
 
