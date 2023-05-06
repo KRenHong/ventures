@@ -1,82 +1,97 @@
-'use client'
-import Footer from "@/app/components/footer";
+'use client';
+
 import Navbar from "@/app/components/nav";
-import css from "globals";
-import { Card, Switch, Row, Container, Spacer, Grid, Text, Link } from "@nextui-org/react";
-// import Command from "@/app/components/command"
-import React from 'react'
-import { Command } from 'cmdk'
-import {  Calculator,  Calendar,  CreditCard,  Settings,  Smile,  User, } from "lucide-react"
+import { Input, Text, Button, css, Card} from "@nextui-org/react";
 
 
-export default function Page() {
+const inputStyle = {
+  width: '1170px',
+}
 
-  const [open, setOpen] = React.useState(false)
-
-  // Toggle the menu when ⌘K is pressed
-  React.useEffect(() => {
-    const down = (e: { key: string; metaKey: any }) => {
-      if (e.key === 'k' && e.metaKey) {
-        setOpen((open) => !open)
-      }
-    }
-
-    document.addEventListener('keydown', down)
-    return () => document.removeEventListener('keydown', down)
-  }, [])
-
-    return (
+export default function Dashboard() {
+  return (
     <>
-    <Navbar/>
-      {/* <Navbar/> */}
-      <h1>Dashboard</h1>
+      <Navbar />
 
-      <Container fluid>
-        <Text h4 className='topic1 '
-        size={25}
-        css={{textGradient: "45deg, $blue600 -20%, $pink600 50%",}}
-        weight="bold">Startup Company Statistic</Text>
+      <section className="py-12 px-12 mx-auto">
+        <div className="px-12 max-w-7xl min-h-screen mx-auto">
+          <h1 className="text-4xl font-bold mb-8">Company Statistics</h1>
 
-{/* <Command.Dialog open={open} onOpenChange={setOpen} label="Global Command Menu">
-      <Command.Input />
-      <Command.List>
-        <Command.Empty>No results found.</Command.Empty>
+          <Input
+            bordered
+            rounded
+            size="xl"
+            placeholder="Search for a company"
+            color="primary"
+            style={inputStyle}
+            className="mb-8"
+          />
 
-        <Command.Group heading="Letters">
-          <Command.Item>a</Command.Item>
-          <Command.Item>b</Command.Item>
-          <Command.Separator />
-          <Command.Item>c</Command.Item>
-        </Command.Group>
+        <div className="bg-gray-300 p-4 rounded-lg shadow-lg mb-5">
+            <Text size="large" className="inline-block font-bold w-1/6">Rank</Text>
+            <Text size="large" className="inline-block font-bold w-2/6">Name</Text>
+            <Text size="large" className="inline-block font-bold w-1/6">Revenue</Text>
+            <Text size="large" className="inline-block font-bold w-1/6">Total Raised</Text>
+            <Text size="large" className="inline-block font-bold w-1/6">Employee</Text>
+        </div>
 
-        <Command.Item>Apple</Command.Item>
-      </Command.List>
-    </Command.Dialog> */}
+        <a href="#">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+              <Text size="large" className="inline-block w-1/6">1</Text>
+              <Text size="large" className="inline-block w-2/6">6ixNine</Text>
+              <Text size="large" className="inline-block w-1/6">1 Billion</Text>
+              <Text size="large" className="inline-block w-1/6">69 billion</Text>
+              <Text size="large" className="inline-block w-1/6">500</Text>
+            </div>
+        </a>
+
+        <a href="#">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+              <Text size="large" className="inline-block w-1/6">1</Text>
+              <Text size="large" className="inline-block w-2/6">6ixNine</Text>
+              <Text size="large" className="inline-block w-1/6">1 Billion</Text>
+              <Text size="large" className="inline-block w-1/6">69 billion</Text>
+              <Text size="large" className="inline-block w-1/6">500</Text>
+            </div>
+        </a>
+
+        <a href="#">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+              <Text size="large" className="inline-block w-1/6">1</Text>
+              <Text size="large" className="inline-block w-2/6">6ixNine</Text>
+              <Text size="large" className="inline-block w-1/6">1 Billion</Text>
+              <Text size="large" className="inline-block w-1/6">69 billion</Text>
+              <Text size="large" className="inline-block w-1/6">500</Text>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+              <Text size="large" className="inline-block w-1/6">1</Text>
+              <Text size="large" className="inline-block w-2/6">6ixNine</Text>
+              <Text size="large" className="inline-block w-1/6">1 Billion</Text>
+              <Text size="large" className="inline-block w-1/6">69 billion</Text>
+              <Text size="large" className="inline-block w-1/6">500</Text>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div className="mb-3 border-2 border-indigo-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+              <Text size="large" className="inline-block w-1/6">1</Text>
+              <Text size="large" className="inline-block w-2/6">6ixNine</Text>
+              <Text size="large" className="inline-block w-1/6">1 Billion</Text>
+              <Text size="large" className="inline-block w-1/6">69 billion</Text>
+              <Text size="large" className="inline-block w-1/6">500</Text>
+            </div>
+        </a>
+
         
-        <Text h6 size={15} >number left</Text>
 
-<Spacer y={2} />
-        <Container className="grid-container-dashboard">
-          <Row>
 
-          <Card onClick={() => {
-          window.open("../pages/about");}} 
-        style={{ height: "50px", display: "flex", alignItems: "center" }}
-        isPressable
-        isHoverable>
-            <Text css={{ p: "$1" ,display: "flex" }}>Rank</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Category : Company Name</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Revenue Growth</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Revenue Latest</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>EBIJ</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 6</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 12</Text>
-            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 12</Text>
-            </Card></Row>
-
-        </Container>
-      </Container>
-      <Footer/>
-      </>
-    )
-  }
+        </div>
+      </section>
+    </>
+  );
+}
