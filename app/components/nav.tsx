@@ -40,8 +40,8 @@ const Navbar = () => {
                   <h1 className='text-white'>Dashboard</h1>
                 </Link>
 
-                <Switch checked={isDark}
-                onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')} />
+                {/* <Switch checked={isDark}
+                onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')} /> */}
 
                 {/* <button
                   onClick={() => theme == "dark"? setTheme('light'): setTheme("dark") }

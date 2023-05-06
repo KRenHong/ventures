@@ -1,6 +1,7 @@
 'use client'
 import Footer from "@/app/components/footer";
 import Navbar from "@/app/components/nav";
+import css from "globals";
 import { Card, Switch, Row, Container, Spacer, Grid, Text, Link } from "@nextui-org/react";
 // import Command from "@/app/components/command"
 import React from 'react'
@@ -29,13 +30,14 @@ export default function Page() {
     <Navbar/>
       {/* <Navbar/> */}
       <h1>Dashboard</h1>
+
       <Container fluid>
         <Text h4 className='topic1 '
         size={25}
         css={{textGradient: "45deg, $blue600 -20%, $pink600 50%",}}
         weight="bold">Startup Company Statistic</Text>
 
-<Command.Dialog open={open} onOpenChange={setOpen} label="Global Command Menu">
+{/* <Command.Dialog open={open} onOpenChange={setOpen} label="Global Command Menu">
       <Command.Input />
       <Command.List>
         <Command.Empty>No results found.</Command.Empty>
@@ -49,22 +51,30 @@ export default function Page() {
 
         <Command.Item>Apple</Command.Item>
       </Command.List>
-    </Command.Dialog>
+    </Command.Dialog> */}
         
-        <Text h5 className='text-primary-100 dark:text-primary-300' size={15}>Search Bar</Text>
         <Text h6 size={15} >number left</Text>
 
 <Spacer y={2} />
-        <Row justify="center" align="center">
-            <div className="grid lg:grid-cols-5 gap-4 p-4">
-                <div className="lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
-                    <div className="flex flex-col w-full pb-4">
-                        <p className="text- 2xl font-bold">7000</p>
-                    </div>
-                </div>
-            </div>
+        <Container className="grid-container-dashboard">
+          <Row>
 
-        </Row>
+          <Card onClick={() => {
+          window.open("../pages/about");}} 
+        style={{ height: "50px", display: "flex", alignItems: "center" }}
+        isPressable
+        isHoverable>
+            <Text css={{ p: "$1" ,display: "flex" }}>Rank</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Category : Company Name</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Revenue Growth</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Revenue Latest</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>EBIJ</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 6</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 12</Text>
+            <Text css={{ p: "$1" ,display: "flex" }}>Employee Growth 12</Text>
+            </Card></Row>
+
+        </Container>
       </Container>
       <Footer/>
       </>
