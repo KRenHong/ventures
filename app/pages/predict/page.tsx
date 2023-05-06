@@ -35,17 +35,16 @@ export default function Predict() {
           <Button id="predictButton" style={buttonStyle} auto shadow color="gradient" size="xl" className="mb-8"
           css={{
             '&:hover': {
-              background: '$purple50',
-              color: '$purple800',
+              background: '$purple100',
+              color: '$pink800',
             },
             '&:active': {
-              background: '$purple400',
+              background: '$purple300',
             },
             '&:focus': {
               borderColor: '$pink400',
             },
           }}
-          
           >Predict</Button>
         </div>
       </section>
