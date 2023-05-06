@@ -25,12 +25,25 @@ export default function Predict() {
           <h1 className="text-4xl font-bold mb-8">Prediction</h1>
           <Text className="mb-3" size="$xl">Revenue</Text>
           <Input style={inputStyle} rounded bordered placeholder="Revenue" color="primary" className="mb-8"/>
-          <Text className="mb-3" size="$xl">Earnings</Text>
-          <Input style={inputStyle} rounded bordered placeholder="Earnings" color="primary" className="mb-8"/>
-          <Text className="mb-3" size="$xl">Number of employee</Text>
-          <Input style={inputStyle} rounded bordered placeholder="Number of employee" color="primary" className="mb-8"/>
+          <Text className="mb-3" size="$xl">Incorporate duration in years</Text>
+          <Input style={inputStyle} rounded bordered placeholder="Incorporate duration(in years)" color="primary" className="mb-8"/>
+          <Text className="mb-3" size="$xl">Choose company category</Text>
+          {/* <Input style={inputStyle} rounded bordered placeholder="category" color="primary" className="mb-8"/> */}
+          <select style={inputStyle} className="form-select mb-8">
+            <option value="category1">Technology</option>
+            <option value="category2">Business Services</option>
+            <option value="category3">Health & Wellness</option>
+            <option value="category1">Media & Entertainment</option>
+            <option value="category2">Finance & Fintech</option>
+            <option value="category3">Manufacturing & Industry</option>
+            <option value="category1">Environment & Sustainability</option>
+            <option value="category2">Consumer Goods & Retail</option>
+            <option value="category3">Education & EdTech</option>
+            <option value="category1">Travel & Hospitality</option>
+          </select>
           <Text className="mb-3" size="$xl">Total last funding</Text>
           <Input style={inputStyle} rounded bordered placeholder="Funding" color="primary" className="mb-8"/>
+          
 
           <Button id="predictButton" style={buttonStyle} auto shadow color="gradient" size="xl" className="mb-8"
           css={{
