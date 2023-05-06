@@ -36,7 +36,7 @@ export default function Dashboard() {
         </div>
 
         <a href="#">
-            <div className="mb-3 border-2 border-indigo-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
               <Text size="large" className="inline-block w-1/6">1</Text>
               <Text size="large" className="inline-block w-2/6">6ixNine</Text>
               <Text size="large" className="inline-block w-1/6">1 Billion</Text>
@@ -46,7 +46,7 @@ export default function Dashboard() {
         </a>
 
         <a href="#">
-            <div className="mb-3 border-2 border-indigo-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
               <Text size="large" className="inline-block w-1/6">1</Text>
               <Text size="large" className="inline-block w-2/6">6ixNine</Text>
               <Text size="large" className="inline-block w-1/6">1 Billion</Text>
@@ -56,7 +56,7 @@ export default function Dashboard() {
         </a>
 
         <a href="#">
-            <div className="mb-3 border-2 border-indigo-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
               <Text size="large" className="inline-block w-1/6">1</Text>
               <Text size="large" className="inline-block w-2/6">6ixNine</Text>
               <Text size="large" className="inline-block w-1/6">1 Billion</Text>
@@ -67,7 +67,7 @@ export default function Dashboard() {
 
 
         <a href="#">
-            <div className="mb-3 border-2 border-indigo-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
+            <div className="mb-3 border-2 border-gray-500/50 p-4 rounded-lg shadow-lg cursor-pointer transition duration-300 hover:bg-indigo-100">
               <Text size="large" className="inline-block w-1/6">1</Text>
               <Text size="large" className="inline-block w-2/6">6ixNine</Text>
               <Text size="large" className="inline-block w-1/6">1 Billion</Text>
