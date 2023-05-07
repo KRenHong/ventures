@@ -25,7 +25,7 @@ export default function Predict() {
               <Collapse.Group>
                 <Collapse
                   className="mb-5"
-                  title="Amazon Marketplace"
+                  title="Fluxon"
                   bordered
                   subtitle="E-Commerce Platform"
                   css={{
@@ -108,7 +108,256 @@ export default function Predict() {
 
                 <Collapse
                   className="mb-5"
-                  title="Amazon Marketplace"
+                  title="ThriveHive"
+                  bordered
+                  subtitle="Technology"
+                  css={{
+                    background: "$gray50", // colors.pink800
+                    color: "$pink100", // space[12]
+                    boxShadow: "$md", // shadows.md
+                    "&:hover": {
+                      background: "$purple100",
+                      color: "$pink800",
+                    },
+                    "&:active": {
+                      background: "$gray200",
+                    },
+                    "&:focus": {
+                      borderColor: "$gray400",
+                    },
+                  }}
+                >
+                  <Text className="text-2xl font-bold mb-1">
+                    Summary of the StartUps
+                  </Text>
+
+                  <Text className="mb-5" color="#808080">
+                    A startup or start-up is a company or project undertaken by
+                    an entrepreneur to seek, develop, and validate a scalable
+                    business model.[1][2] While entrepreneurship includes all
+                    new businesses, including self-employment and businesses
+                    that do not intend to go public, startups are new businesses
+                    that intend to grow large beyond the solo founder.[3] At the
+                    beginning, startups face high uncertainty[4] and have high
+                    rates of failure, but a minority of them do go on to be
+                    successful and influential.[5]
+                  </Text>
+
+                  <Text className="text-2xl font-bold mb-1">
+                    Highlights of the StartUps
+                  </Text>
+
+                  <div className="mb-3">
+                    <ul>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Top 10 among Startups
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Revenue Growth exceeds 1 million dollars{" "}
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Next Goal get IPO in Bursa Malaysia{" "}
+                      </Text>
+                    </ul>
+                  </div>
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
+                      )
+                    }
+                    id="predictButton"
+                    auto
+                    shadow
+                    color="gradient"
+                    size="xl"
+                    className="ml-3"
+                    css={{
+                      "&:hover": {
+                        background: "$purple300",
+                        color: "$pink800",
+                      },
+                      "&:active": {
+                        background: "$purple300",
+                      },
+                      "&:focus": {
+                        borderColor: "$pink400",
+                      },
+                    }}
+                  >
+                    Check it Out !
+                  </Button>
+                </Collapse>
+
+                <Collapse
+                  className="mb-5"
+                  title="BluewaveAI"
+                  bordered
+                  subtitle="Technology"
+                  css={{
+                    background: "$gray50", // colors.pink800
+                    color: "$pink100", // space[12]
+                    boxShadow: "$md", // shadows.md
+                    "&:hover": {
+                      background: "$purple100",
+                      color: "$pink800",
+                    },
+                    "&:active": {
+                      background: "$gray200",
+                    },
+                    "&:focus": {
+                      borderColor: "$gray400",
+                    },
+                  }}
+                >
+                  <Text className="text-2xl font-bold mb-1">
+                    Summary of the StartUps
+                  </Text>
+
+                  <Text className="mb-5" color="#808080">
+                    A startup or start-up is a company or project undertaken by
+                    an entrepreneur to seek, develop, and validate a scalable
+                    business model.[1][2] While entrepreneurship includes all
+                    new businesses, including self-employment and businesses
+                    that do not intend to go public, startups are new businesses
+                    that intend to grow large beyond the solo founder.[3] At the
+                    beginning, startups face high uncertainty[4] and have high
+                    rates of failure, but a minority of them do go on to be
+                    successful and influential.[5]
+                  </Text>
+
+                  <Text className="text-2xl font-bold mb-1">
+                    Highlights of the StartUps
+                  </Text>
+
+                  <div className="mb-3">
+                    <ul>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Top 10 among Startups
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Revenue Growth exceeds 1 million dollars{" "}
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Next Goal get IPO in Bursa Malaysia{" "}
+                      </Text>
+                    </ul>
+                  </div>
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
+                      )
+                    }
+                    id="predictButton"
+                    auto
+                    shadow
+                    color="gradient"
+                    size="xl"
+                    className="ml-3"
+                    css={{
+                      "&:hover": {
+                        background: "$purple300",
+                        color: "$pink800",
+                      },
+                      "&:active": {
+                        background: "$purple300",
+                      },
+                      "&:focus": {
+                        borderColor: "$pink400",
+                      },
+                    }}
+                  >
+                    Check it Out !
+                  </Button>
+                </Collapse>
+
+                <Collapse
+                  className="mb-5"
+                  title="NextElevate"
+                  bordered
+                  subtitle="Healthcare"
+                  css={{
+                    background: "$gray50", // colors.pink800
+                    color: "$pink100", // space[12]
+                    boxShadow: "$md", // shadows.md
+                    "&:hover": {
+                      background: "$purple100",
+                      color: "$pink800",
+                    },
+                    "&:active": {
+                      background: "$gray200",
+                    },
+                    "&:focus": {
+                      borderColor: "$gray400",
+                    },
+                  }}
+                >
+                  <Text className="text-2xl font-bold mb-1">
+                    Summary of the StartUps
+                  </Text>
+
+                  <Text className="mb-5" color="#808080">
+                    A startup or start-up is a company or project undertaken by
+                    an entrepreneur to seek, develop, and validate a scalable
+                    business model.[1][2] While entrepreneurship includes all
+                    new businesses, including self-employment and businesses
+                    that do not intend to go public, startups are new businesses
+                    that intend to grow large beyond the solo founder.[3] At the
+                    beginning, startups face high uncertainty[4] and have high
+                    rates of failure, but a minority of them do go on to be
+                    successful and influential.[5]
+                  </Text>
+
+                  <Text className="text-2xl font-bold mb-1">
+                    Highlights of the StartUps
+                  </Text>
+
+                  <div className="mb-3">
+                    <ul>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Top 10 among Startups
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Revenue Growth exceeds 1 million dollars{" "}
+                      </Text>
+                      <Text color="#808080" className="ml-3 mb-2">
+                        - Next Goal get IPO in Bursa Malaysia{" "}
+                      </Text>
+                    </ul>
+                  </div>
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
+                      )
+                    }
+                    id="predictButton"
+                    auto
+                    shadow
+                    color="gradient"
+                    size="xl"
+                    className="ml-3"
+                    css={{
+                      "&:hover": {
+                        background: "$purple300",
+                        color: "$pink800",
+                      },
+                      "&:active": {
+                        background: "$purple300",
+                      },
+                      "&:focus": {
+                        borderColor: "$pink400",
+                      },
+                    }}
+                  >
+                    Check it Out !
+                  </Button>
+                </Collapse>
+
+                <Collapse
+                  className="mb-5"
+                  title="Swiftrise"
                   bordered
                   subtitle="E-Commerce Platform"
                   css={{
@@ -191,256 +440,7 @@ export default function Predict() {
 
                 <Collapse
                   className="mb-5"
-                  title="Amazon Marketplace"
-                  bordered
-                  subtitle="E-Commerce Platform"
-                  css={{
-                    background: "$gray50", // colors.pink800
-                    color: "$pink100", // space[12]
-                    boxShadow: "$md", // shadows.md
-                    "&:hover": {
-                      background: "$purple100",
-                      color: "$pink800",
-                    },
-                    "&:active": {
-                      background: "$gray200",
-                    },
-                    "&:focus": {
-                      borderColor: "$gray400",
-                    },
-                  }}
-                >
-                  <Text className="text-2xl font-bold mb-1">
-                    Summary of the StartUps
-                  </Text>
-
-                  <Text className="mb-5" color="#808080">
-                    A startup or start-up is a company or project undertaken by
-                    an entrepreneur to seek, develop, and validate a scalable
-                    business model.[1][2] While entrepreneurship includes all
-                    new businesses, including self-employment and businesses
-                    that do not intend to go public, startups are new businesses
-                    that intend to grow large beyond the solo founder.[3] At the
-                    beginning, startups face high uncertainty[4] and have high
-                    rates of failure, but a minority of them do go on to be
-                    successful and influential.[5]
-                  </Text>
-
-                  <Text className="text-2xl font-bold mb-1">
-                    Highlights of the StartUps
-                  </Text>
-
-                  <div className="mb-3">
-                    <ul>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Top 10 among Startups
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Revenue Growth exceeds 1 million dollars{" "}
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Next Goal get IPO in Bursa Malaysia{" "}
-                      </Text>
-                    </ul>
-                  </div>
-                  <Button
-                    onClick={() =>
-                      window.open(
-                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
-                      )
-                    }
-                    id="predictButton"
-                    auto
-                    shadow
-                    color="gradient"
-                    size="xl"
-                    className="ml-3"
-                    css={{
-                      "&:hover": {
-                        background: "$purple300",
-                        color: "$pink800",
-                      },
-                      "&:active": {
-                        background: "$purple300",
-                      },
-                      "&:focus": {
-                        borderColor: "$pink400",
-                      },
-                    }}
-                  >
-                    Check it Out !
-                  </Button>
-                </Collapse>
-
-                <Collapse
-                  className="mb-5"
-                  title="Amazon Marketplace"
-                  bordered
-                  subtitle="E-Commerce Platform"
-                  css={{
-                    background: "$gray50", // colors.pink800
-                    color: "$pink100", // space[12]
-                    boxShadow: "$md", // shadows.md
-                    "&:hover": {
-                      background: "$purple100",
-                      color: "$pink800",
-                    },
-                    "&:active": {
-                      background: "$gray200",
-                    },
-                    "&:focus": {
-                      borderColor: "$gray400",
-                    },
-                  }}
-                >
-                  <Text className="text-2xl font-bold mb-1">
-                    Summary of the StartUps
-                  </Text>
-
-                  <Text className="mb-5" color="#808080">
-                    A startup or start-up is a company or project undertaken by
-                    an entrepreneur to seek, develop, and validate a scalable
-                    business model.[1][2] While entrepreneurship includes all
-                    new businesses, including self-employment and businesses
-                    that do not intend to go public, startups are new businesses
-                    that intend to grow large beyond the solo founder.[3] At the
-                    beginning, startups face high uncertainty[4] and have high
-                    rates of failure, but a minority of them do go on to be
-                    successful and influential.[5]
-                  </Text>
-
-                  <Text className="text-2xl font-bold mb-1">
-                    Highlights of the StartUps
-                  </Text>
-
-                  <div className="mb-3">
-                    <ul>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Top 10 among Startups
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Revenue Growth exceeds 1 million dollars{" "}
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Next Goal get IPO in Bursa Malaysia{" "}
-                      </Text>
-                    </ul>
-                  </div>
-                  <Button
-                    onClick={() =>
-                      window.open(
-                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
-                      )
-                    }
-                    id="predictButton"
-                    auto
-                    shadow
-                    color="gradient"
-                    size="xl"
-                    className="ml-3"
-                    css={{
-                      "&:hover": {
-                        background: "$purple300",
-                        color: "$pink800",
-                      },
-                      "&:active": {
-                        background: "$purple300",
-                      },
-                      "&:focus": {
-                        borderColor: "$pink400",
-                      },
-                    }}
-                  >
-                    Check it Out !
-                  </Button>
-                </Collapse>
-
-                <Collapse
-                  className="mb-5"
-                  title="Amazon Marketplace"
-                  bordered
-                  subtitle="E-Commerce Platform"
-                  css={{
-                    background: "$gray50", // colors.pink800
-                    color: "$pink100", // space[12]
-                    boxShadow: "$md", // shadows.md
-                    "&:hover": {
-                      background: "$purple100",
-                      color: "$pink800",
-                    },
-                    "&:active": {
-                      background: "$gray200",
-                    },
-                    "&:focus": {
-                      borderColor: "$gray400",
-                    },
-                  }}
-                >
-                  <Text className="text-2xl font-bold mb-1">
-                    Summary of the StartUps
-                  </Text>
-
-                  <Text className="mb-5" color="#808080">
-                    A startup or start-up is a company or project undertaken by
-                    an entrepreneur to seek, develop, and validate a scalable
-                    business model.[1][2] While entrepreneurship includes all
-                    new businesses, including self-employment and businesses
-                    that do not intend to go public, startups are new businesses
-                    that intend to grow large beyond the solo founder.[3] At the
-                    beginning, startups face high uncertainty[4] and have high
-                    rates of failure, but a minority of them do go on to be
-                    successful and influential.[5]
-                  </Text>
-
-                  <Text className="text-2xl font-bold mb-1">
-                    Highlights of the StartUps
-                  </Text>
-
-                  <div className="mb-3">
-                    <ul>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Top 10 among Startups
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Revenue Growth exceeds 1 million dollars{" "}
-                      </Text>
-                      <Text color="#808080" className="ml-3 mb-2">
-                        - Next Goal get IPO in Bursa Malaysia{" "}
-                      </Text>
-                    </ul>
-                  </div>
-                  <Button
-                    onClick={() =>
-                      window.open(
-                        "https://docs.google.com/presentation/d/1ZrCXviMjzed7Chd1G3Ln35IfP4FxX8eR/edit?usp=share_link&ouid=108591630335258582046&rtpof=true&sd=true"
-                      )
-                    }
-                    id="predictButton"
-                    auto
-                    shadow
-                    color="gradient"
-                    size="xl"
-                    className="ml-3"
-                    css={{
-                      "&:hover": {
-                        background: "$purple300",
-                        color: "$pink800",
-                      },
-                      "&:active": {
-                        background: "$purple300",
-                      },
-                      "&:focus": {
-                        borderColor: "$pink400",
-                      },
-                    }}
-                  >
-                    Check it Out !
-                  </Button>
-                </Collapse>
-
-                <Collapse
-                  className="mb-5"
-                  title="Amazon Marketplace"
+                  title="VeloTech"
                   bordered
                   subtitle="E-Commerce Platform"
                   css={{

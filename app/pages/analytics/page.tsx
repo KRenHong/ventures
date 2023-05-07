@@ -5,7 +5,7 @@ import Navbar from "@/app/components/nav";
 
 
 export default function Analytics() {
-  const value = 30;
+  const value = 80;
   return (
     <>
       <Navbar />  
@@ -19,7 +19,7 @@ export default function Analytics() {
             </div>
             <div className="col-span-3 bg-white p-6 rounded-md shadow-md">
               <h2 className="text-2xl font-bold mb-4">Key Points of the Company</h2>
-              <p>...</p>
+              <p>Product/Service: The startup offers a unique, innovative product or service that solves a pressing problem for its target market. Business Model: The startup has a scalable business model that can support rapid growth and profitability.</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Analytics() {
             {/* Growth of the company */}
             <div className="bg-white p-6 rounded-md shadow-md">
               <h2 className="text-2xl font-bold mb-4">Growth of the Company</h2>
-              <p>...</p>
+              <p>The startup has a clear growth strategy, with a focus on customer acquisition, product development, and market expansion.</p>
             </div>
 
             {/* Possibilities to get IPO */}
@@ -41,7 +41,7 @@ export default function Analytics() {
               <h2 className="text-2xl font-bold mb-4">
                 Possibilities to Get IPO
               </h2>
-              <p>...</p>
+              <p>The startup has the potential to go public via an initial public offering (IPO) within the next 3-5 years, based on its growth trajectory, market opportunity, and financial performance. However, the decision to pursue an IPO will be based on a careful assessment of market conditions and the company's long-term growth prospects.</p>
             </div>
 
             {/* Founding team members assessment */}
@@ -49,7 +49,7 @@ export default function Analytics() {
               <h2 className="text-2xl font-bold mb-4">
                 Founding Team Members Assessment
               </h2>
-              <p>...</p>
+              <p>The founding team has a strong track record of success in their respective fields, with the expertise and experience needed to execute on the startup's vision.</p>
             </div>
           </div>
         </div>

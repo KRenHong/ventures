@@ -26,11 +26,14 @@ const Navbar = () => {
       <Link href="/" passHref>
         <h1 className="text-white">Home</h1>
       </Link>
-      <Link href="/">
-        <h1 className='text-white'>Pitch-Deck Consolidator</h1>
-      </Link>
       <Link href="/pages/dashboard">
         <h1 className='text-white'>Dashboard</h1>
+      </Link>
+      <Link href="/pages/predict">
+        <h1 className='text-white'>Predict</h1>
+      </Link>
+      <Link href="/pages/pitch">
+        <h1 className='text-white'>Pitch-Deck</h1>
       </Link>
       </div>
     </div>
